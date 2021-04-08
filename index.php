@@ -1,5 +1,5 @@
 <?php 
-
+// adds default header or from header.php
 get_header();
 
 if(have_posts()){
@@ -11,7 +11,7 @@ if(have_posts()){
      
 
 }
-
+// adds default footer or from footer.php
 get_footer();
   
 ?>
