@@ -1,4 +1,4 @@
-# CustomTheme
+# CustomTheme (Version I)
 This is A Custom Theme for WordPress Developed for Demonstration Purpose 
 
 ### The Theme on Dashboard 
