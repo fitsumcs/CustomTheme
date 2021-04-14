@@ -7,4 +7,6 @@
 
 <?php wp_get_archives( array( 'type' => 'postbypost', 'limit' => 10, 'format' => 'custom', 'before' => '', 'after' => '<br />' ) ); ?>
 
+<?php get_sidebar();?>
+
 <?php get_footer(); ?>
