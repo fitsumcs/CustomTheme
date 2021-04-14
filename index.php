@@ -2,7 +2,7 @@
  // adds default header or from header.php
  get_header();
 ?>
-<div class="container">
+<div class="container mt-2">
 <?php 
 if(have_posts()){
     while(have_posts()){
