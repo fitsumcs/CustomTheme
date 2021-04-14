@@ -10,19 +10,9 @@ if(have_posts()){
         <h1> <a href="<?php the_permalink()?>"><?php the_title()?></a></h1>
         <?php 
         
-        // check if the post has a Post Thumbnail assigned to it.
-        if ( has_post_thumbnail() ) {
-	     the_post_thumbnail();
-         } 
-
-        the_content()
+        the_content();
         
-        ?>
-    <?php }
-     
-
-}
-?>
+    }}?>
 </div>
 
 <?php
