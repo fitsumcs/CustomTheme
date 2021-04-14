@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?' ); ?></h2>
+
+<div class="container">
+
+<h4 class="mt-3"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?' ); ?></h4>
 
 <div class="row">
 <div class="col-9">
@@ -13,6 +16,6 @@
 </div>
 </div>
 
-
+</div>
 
 <?php get_footer(); ?>
