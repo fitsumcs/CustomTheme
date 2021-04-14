@@ -24,6 +24,14 @@ function wct_custom_new_menu() {
 //   Add the hook to make the menu 
 add_action( 'init', 'wct_custom_new_menu' );
 
+// Adding sidebar 
+function my_custom_theme_sidebar() {
+  register_sidebar( array(
+      'name' => __( 'Primary Sidebar', 'my-custom-theme' ),
+      'id'   => 'sidebar-1',
+  ) );
+}
+add_action( 'widgets_init', 'my_custom_theme_sidebar' );
 
 // Adding Style 
 function wct_loadStyle()
