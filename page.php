@@ -1,7 +1,9 @@
 <?php 
 // adds default header or from header.php
 get_header();
-
+?>
+<div class="container">
+<?php
 if(have_posts()){
     while(have_posts()){
         the_post()?>
@@ -10,7 +12,9 @@ if(have_posts()){
     <?php }
      
 
-}
+}?>
+</div>
+<?php
 // adds default footer or from footer.php
 get_footer();
   
