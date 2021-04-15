@@ -6,6 +6,9 @@
 // Add Menu Support
 add_theme_support('menus');
 
+// Add thumbnails Support 
+add_theme_support( 'post-thumbnails' );
+
 
 // Register Nav Menu 
 function wct_custom_new_menu() {
