@@ -8,6 +8,9 @@
     <?php wp_head() ?>
 </head>
 <body <?php body_class()?>>
+
+<div class="heading">
+
 <header class="site-header">
 <h1>   <a href="<?php echo home_url()?>"><?php bloginfo('name')?></a>  </h1>
 <h4><?php bloginfo('description')?></h4>
@@ -21,3 +24,6 @@ wp_nav_menu( array( 'theme_location' => 'top-menu' ) );
 ?>
 
 </nav>
+
+</div>
+
