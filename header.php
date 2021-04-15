@@ -15,8 +15,9 @@
 <nav>
 
 <?php
-wp_nav_menu( array( 
-    'theme_location' => 'top-menu' ) ); 
+
+// Display the menu location "Top Menu"
+wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); 
 ?>
 
 </nav>
