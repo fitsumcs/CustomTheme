@@ -22,4 +22,12 @@ function wct_custom_new_menu() {
 add_action( 'init', 'wct_custom_new_menu' );
 
 
+// Adding Style 
+function wct_loadStyle()
+{
+    wp_register_style( 'style1', get_template_directory_uri() . '/assets/css/style1.css',array(), false, 'all');
+    wp_enqueue_style('style1');
+}
+add_action( 'wp_enqueue_scripts', 'wct_loadStyle' );
+
 ?>
