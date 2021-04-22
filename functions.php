@@ -51,4 +51,44 @@ function register_navwalker(){
 add_action( 'after_setup_theme', 'register_navwalker' );
 
 
+		/**
+		 * Enable support for site logo
+		 */
+		add_theme_support(
+			'custom-logo',
+			apply_filters(
+				'ocean_custom_logo_args',
+				array(
+					'height'      => 45,
+					'width'       => 164,
+					'flex-height' => true,
+					'flex-width'  => true,
+				)
+			)
+		);
+
+    	/**
+		 * Enable support for header image
+		 */
+		add_theme_support(
+			'custom-header',
+			apply_filters(
+				'ocean_custom_header_args',
+				array(
+					'width'       => 2000,
+					'height'      => 1200,
+					'flex-height' => true,
+					'video'       => true,
+				)
+			)
+		);
+
+    // Enable support for Post Thumbnails on posts and pages.
+		add_theme_support( 'post-thumbnails' );
+
+    	// Enable support for Post Formats.
+		add_theme_support( 'post-formats', array( 'video', 'gallery', 'audio', 'quote', 'link' ) );
+
+		// Enable support for <title> tag.
+		add_theme_support( 'title-tag' );
 ?>
